@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic after and before </title>
+    <style type="text/css">
+    
+        .wrapper{
+            display: block;
+            height: 50vh;
+            width:75%;
+            
+            margin: 30px auto;
+            border:1px solid #c63;
+        }
+        .loader{
+            display: block;
+            width:200px;
+            height: 200px;
+            border:8px solid transparent;
+            margin: 50px auto;
+            border-radius: 50%;
+            border-bottom: 8px solid orange;
+            border-top: 8px solid green;
+            animation: ani 4s linear infinite 0.4s;
+        }
+        
+        @keyframes ani
+        {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    
+    </style>
+</head>
+
+<body>
+   
+    <div class="wrapper">
+    
+         <div class="loader">
+    
+    </div>
+
+    
+    </div>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+    <!-- internal css  -->
+
+    <style type="text/css">
+        /* wlid or all or universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+         
+
+       /* type or tag or empty selector  */
+
+       p{
+         color: royalblue;
+         /* make all paragraphs have royelblue text & 20px margin in y axis */
+         margin: 20px auto;
+         width: 70%;
+         text-align: justify;
+       }
+
+       /* design for h1 & h2 having Arial font family & centralize text alignment  */
+       /* Group selector using comma operator */
+       h1,h2,h3{
+            font-family: Arial;
+            text-align: center;
+            margin: 30px ;
+       }
+
+       /*
+       Descendant Selectors :  Match an element that is a descendant of another element.
+       
+       This uses two separate selectors, separated by a space.
+
+        here ul li - descendant selector
+       */
+
+       /* id -
+       #id_name{
+        ... css property ....
+       }
+       
+       */
+
+       #menu{
+        height: 50px;
+        line-height: 50px;
+        background-color: #292929;
+        margin: 0 auto;
+        text-align: center;
+       }
+       #menu li{
+        display: inline-block;
+        color: #efefef;
+        font-family: sans-serif;
+        margin: 0 25px;
+       }
+ 
+
+       /* child selector - psudo selector  */
+       #menu li:nth-child(3) {
+        color: rgb(254, 117, 49);
+       }
+
+    #menu li:first-child{
+        color: green;
+       }
+       
+       
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Blog</li>
+        <li>Contact</li>
+    </ul>
+   
+    <h1>This is the example of type selector</h1>
+
+    <p>Aperiam ducimus provident eos debitis omnis quae culpa a repellendus modi libero voluptate ullam ex nesciunt quaerat aliquid consequatur iure recusandae, placeat natus reprehenderit cumque dicta molestias repudiandae ut? Optio nemo omnis ratione ea quidem numquam, aliquam impedit molestiae. Similique est corrupti dolor quisquam autem pariatur dolores, incidunt adipisci! Ratione!</p>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+    <h2>This is the example of stylish h2</h2>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+     <h3>sample of group selector</h3>
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+    <p>Commodi magnam sequi, modi suscipit optio minus illo ex odio non corrupti maxime quo nesciunt sapiente. Libero porro laboriosam sapiente enim nemo atque. Voluptatibus blanditiis impedit autem delectus, tempore magni, sint vitae saepe cum quas dolorum cumque soluta! Veritatis magni sed tempora quidem ut non voluptate voluptatem. Optio, temporibus molestias!</p>
+
+
+   
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Blog</li>
+        <li>Contact</li>
+        <li>Product</li>
+        <li>Account</li>
+        <li>Feedback</li>
+    </ul>
+</body>
+</html>
+
+css = casecading style sheet
+Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML.
+
+Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language.
+
+Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independently of the HTML that makes up each web page. It describes how a webpage should look: it prescribes colours, fonts, spacing, and much more. In short, you can make your website look however you want. CSS lets developers and designers define how it behaves, including how elements are positioned in the browser.
+
+Type of CSS
+
+1> inline css
+
+ <tag_name style="property_1:value;property_2:value;....;property_N:value;">
+ .......  Your content .........
+ </tag_name>
+ 
+ Example -
+  <h1 style="color:crimson; text-align:center; border:2px solid blue">
+  Hello world
+  </h1>
+ 
+ css = casecading style sheet
+Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML.
+
+Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language.
+
+Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independently of the HTML that makes up each web page. It describes how a webpage should look: it prescribes colours, fonts, spacing, and much more. In short, you can make your website look however you want. CSS lets developers and designers define how it behaves, including how elements are positioned in the browser.
+
+Type of CSS
+
+1> inline css
+
+ <tag_name style="property_1:value;property_2:value;....;property_N:value;">
+ .......  Your content .........
+ </tag_name>
+ 
+ Example -
+  <h1 style="color:crimson; text-align:center; border:2px solid blue">
+  Hello world
+  </h1>
+

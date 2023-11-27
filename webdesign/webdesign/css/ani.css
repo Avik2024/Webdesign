@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 50px;
+    background-color: gray;
+}
+.container{
+    width: 85%;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    margin: 20px auto;
+}
+.myBtn{
+    margin: 25px auto;  
+    padding: 15px 35px;  
+    font-size: 20px ; 
+    background-color: rgb(241, 154, 240);
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s linear 0.1s;
+}
+
+.myBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.container .box{
+    width: 150px;
+    height: 150px;
+    margin: 25px auto;
+    border: 1px solid #000;
+    display: block;
+    transition: all 0.4s linear 0.1s;
+}
+
+.rotate{
+    background-color: pink;
+    transform: rotate(0deg);
+
+}
+
+.rotate:hover{
+    transform: rotate(45deg);
+}
+
+.scale{
+    background-color: gold;
+    transform: scale(1);
+}
+
+.scale:hover{
+    transform: scale(1.5);
+}
+
+.transx{
+    background-color: #FF4B91;
+    transform: translate(0,0);
+}
+
+.transx:hover{
+    transform: translate(150px,0);
+}
+
+.transy{
+    background-color: #BC7AF9;
+    transform: translate(0,0);
+}
+
+.transy:hover{
+    transform: translate(0,-50px);
+}
+
+.trans{
+    background-color: #362FD9;
+    transform: translate(0,0);
+}
+
+.trans:hover{
+    transform: translate(150px,-150px);
+}
+
+
+
+.skew{
+    background-color: crimson;
+    transform: skew(0deg);
+}
+
+.skew:hover{
+    transform: skew(-30deg);
+}
+
+
+.rotatex{
+    background-color: pink;
+    transform: rotateX(0deg);
+
+}
+
+.rotatex:hover{
+    transform: rotateX(45deg);
+}
+
+
+.rotatey{
+    background-color: pink;
+    transform: rotateY(0deg);
+
+}
+
+.rotatey:hover{
+    transform: rotateY(45deg);
+}
+
+
+.rotate3dx{
+    background-color: pink;
+    transform: perspective(800px) rotateX(0deg);
+
+}
+
+.rotate3dx:hover{
+    transform: perspective(200px) rotateX(45deg);
+}
+
+
+.rotate3dy{
+    background-color: pink;
+    transform: perspective(800px) rotateY(0deg);
+
+}
+
+.rotate3dy:hover{
+    transform: perspective(200px) rotateY(45deg);
+}
+
+ .animate{
+    width: 150px;
+    height: 150px;
+    border: 10px solid white;
+    border-top-color: coral;
+    border-bottom-color: forestgreen;
+    margin: 30px auto;
+    border-radius: 50%;
+     
+    /* animation: animation_name duration animation_function delay loop ; */
+    animation: spin 8s linear 0.4s infinite;
+ }
+
+ @keyframes spin{
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+
+    50%{
+        transform: rotate(360deg) scale(1.2);
+    }
+ }
+.ball{
+   
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    height: 30vh;
+    width: 50%;
+}
+ .bounce{
+    display: block;
+    margin: 40px auto;
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 50%;
+   
+
+   
+    transform: translate(0px,150px);
+ }
+ .bounce:nth-child(1)
+ {
+    background-color: orangered;
+    box-shadow: 0px 0px 4px 2px orangered;
+    animation: drop 3s linear 0.6s infinite;
+ }
+
+ .bounce:nth-child(2)
+ {
+    background-color: purple;
+    box-shadow: 0px 0px 4px 2px purple;
+    animation: drop 3s linear 1.2s infinite;
+ }
+
+ .bounce:nth-child(3)
+ {
+    background-color: goldenrod;
+    box-shadow: 0px 0px 4px 2px goldenrod;
+    animation: drop 3s linear 1.8s infinite;
+ }
+
+ .bounce:nth-child(4)
+ {
+    background-color: royalblue;
+    box-shadow: 0px 0px 4px 2px royalblue;
+    animation: drop 3s linear 2.4s infinite;
+ }
+
+ @keyframes drop{
+    0%{
+        transform: translate(0px,150px);
+    }
+    25%{
+        transform: translate(50px,0px);
+    }
+    50%{
+        transform: translate(100px,150px);
+    }
+    75%{
+        transform: translate(50px,0px);
+    }
+ }
+
+ .model{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 3% auto ;
+    background: radial-gradient( circle, red,white,white);
+    position: relative;
+    border-radius: 50%;
+    
+ }
+
+ .model::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: linear-gradient(90deg, white,rgba(255, 0, 255, 0.651),white);
+    left: 0px;
+    border-radius: 0 100px;
+ }
+ .model::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: linear-gradient(90deg, white,pink,white);
+  
+    left: 100px;
+    border-radius: 100px 0;
+ }
+
+  
